@@ -50,6 +50,17 @@
         margin-top: 2em;
         font-size: 1.05em;
       }
+      .lang-select {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 18px;
+      }
+      .lang-select select {
+        font-size: 1em;
+        padding: 2px 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
       @media (max-width: 600px) {
         .container {
           padding: 18px 6px;
@@ -59,94 +70,133 @@
   </head>
   <body>
     <div class="container">
-      <h1>Política de Privacidad</h1>
-      <div class="date">Última actualización: 24 de julio de 2025</div>
+      <div class="lang-select">
+        <label for="lang" style="margin-right:8px;">Idioma:</label>
+        <select id="lang">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <h1 data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</h1>
+      <div class="date" data-es="Última actualización: 24 de julio de 2025" data-en="Last updated: July 24, 2025">Última actualización: 24 de julio de 2025</div>
 
-      <h2>1. Introducción</h2>
-      <p>
-        Esta Política de Privacidad describe cómo <strong>TrackMe</strong> (en
-        adelante, “la Aplicación”) recopila, utiliza y protege la información
-        personal de los usuarios. Al utilizar la Aplicación, aceptas las
-        prácticas descritas en esta política.
+      <h2 data-es="1. Introducción" data-en="1. Introduction">1. Introducción</h2>
+      <p data-es="Esta Política de Privacidad describe cómo <strong>TrackMe</strong> (en adelante, “la Aplicación”) recopila, utiliza y protege la información personal de los usuarios. Al utilizar la Aplicación, aceptas las prácticas descritas en esta política."
+         data-en="This Privacy Policy describes how <strong>TrackMe</strong> (hereinafter, “the Application”) collects, uses, and protects users' personal information. By using the Application, you accept the practices described in this policy.">
+        Esta Política de Privacidad describe cómo <strong>TrackMe</strong> (en adelante, “la Aplicación”) recopila, utiliza y protege la información personal de los usuarios. Al utilizar la Aplicación, aceptas las prácticas descritas en esta política.
       </p>
 
-      <h2>2. Información que Recopilamos</h2>
+      <h2 data-es="2. Información que Recopilamos" data-en="2. Information We Collect">2. Información que Recopilamos</h2>
       <ul>
-        <li>
-          <strong>Ubicación geográfica:</strong> Para mostrar la posición de los
-          dispositivos en el mapa y brindar funcionalidades de rastreo.
+        <li data-es="<strong>Ubicación geográfica:</strong> Para mostrar la posición de los dispositivos en el mapa y brindar funcionalidades de rastreo."
+            data-en="<strong>Geographical location:</strong> To display device positions on the map and provide tracking features.">
+          <strong>Ubicación geográfica:</strong> Para mostrar la posición de los dispositivos en el mapa y brindar funcionalidades de rastreo.
         </li>
-        <li>
-          <strong>Identificadores de dispositivo:</strong> Para asociar cada
-          dispositivo con una cuenta de usuario.
+        <li data-es="<strong>Identificadores de dispositivo:</strong> Para asociar cada dispositivo con una cuenta de usuario."
+            data-en="<strong>Device identifiers:</strong> To associate each device with a user account.">
+          <strong>Identificadores de dispositivo:</strong> Para asociar cada dispositivo con una cuenta de usuario.
         </li>
-        <li>
-          <strong>Notificaciones push:</strong> Para enviar alertas y eventos
-          relevantes.
+        <li data-es="<strong>Notificaciones push:</strong> Para enviar alertas y eventos relevantes."
+            data-en="<strong>Push notifications:</strong> To send relevant alerts and events.">
+          <strong>Notificaciones push:</strong> Para enviar alertas y eventos relevantes.
         </li>
-        <li>
-          <strong>Datos de uso:</strong> Información sobre el uso de la app para
-          mejorar el servicio.
+        <li data-es="<strong>Datos de uso:</strong> Información sobre el uso de la app para mejorar el servicio."
+            data-en="<strong>Usage data:</strong> Information about app usage to improve the service.">
+          <strong>Datos de uso:</strong> Información sobre el uso de la app para mejorar el servicio.
         </li>
       </ul>
 
-      <h2>3. Uso de la Información</h2>
-      <p>La información recopilada se utiliza para:</p>
+      <h2 data-es="3. Uso de la Información" data-en="3. Use of Information">3. Uso de la Información</h2>
+      <p data-es="La información recopilada se utiliza para:" data-en="The collected information is used to:">La información recopilada se utiliza para:</p>
       <ul>
-        <li>
+        <li data-es="Proveer y mejorar las funcionalidades de rastreo y notificaciones."
+            data-en="Provide and improve tracking and notification features.">
           Proveer y mejorar las funcionalidades de rastreo y notificaciones.
         </li>
-        <li>Personalizar la experiencia del usuario.</li>
-        <li>Cumplir con obligaciones legales y de seguridad.</li>
-      </ul>
-
-      <h2>4. Compartir Información</h2>
-      <p>
-        No compartimos tu información personal con terceros, salvo en los
-        siguientes casos:
-      </p>
-      <ul>
-        <li>Cuando sea requerido por ley o autoridad competente.</li>
-        <li>
-          Para proteger los derechos y la seguridad de los usuarios y de la
-          Aplicación.
+        <li data-es="Personalizar la experiencia del usuario."
+            data-en="Personalize the user experience.">
+          Personalizar la experiencia del usuario.
+        </li>
+        <li data-es="Cumplir con obligaciones legales y de seguridad."
+            data-en="Comply with legal and security obligations.">
+          Cumplir con obligaciones legales y de seguridad.
         </li>
       </ul>
 
-      <h2>5. Seguridad</h2>
-      <p>
-        Implementamos medidas de seguridad técnicas y organizativas para
-        proteger tus datos personales contra el acceso no autorizado,
-        alteración, divulgación o destrucción.
+      <h2 data-es="4. Compartir Información" data-en="4. Sharing Information">4. Compartir Información</h2>
+      <p data-es="No compartimos tu información personal con terceros, salvo en los siguientes casos:"
+         data-en="We do not share your personal information with third parties, except in the following cases:">
+        No compartimos tu información personal con terceros, salvo en los siguientes casos:
+      </p>
+      <ul>
+        <li data-es="Cuando sea requerido por ley o autoridad competente."
+            data-en="When required by law or competent authority.">
+          Cuando sea requerido por ley o autoridad competente.
+        </li>
+        <li data-es="Para proteger los derechos y la seguridad de los usuarios y de la Aplicación."
+            data-en="To protect the rights and safety of users and the Application.">
+          Para proteger los derechos y la seguridad de los usuarios y de la Aplicación.
+        </li>
+      </ul>
+
+      <h2 data-es="5. Seguridad" data-en="5. Security">5. Seguridad</h2>
+      <p data-es="Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos personales contra el acceso no autorizado, alteración, divulgación o destrucción."
+         data-en="We implement technical and organizational security measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.">
+        Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos personales contra el acceso no autorizado, alteración, divulgación o destrucción.
       </p>
 
-      <h2>6. Retención de Datos</h2>
-      <p>
-        Tus datos personales se conservan solo durante el tiempo necesario para
-        cumplir con los fines para los que fueron recopilados y según lo exija
-        la ley aplicable.
+      <h2 data-es="6. Retención de Datos" data-en="6. Data Retention">6. Retención de Datos</h2>
+      <p data-es="Tus datos personales se conservan solo durante el tiempo necesario para cumplir con los fines para los que fueron recopilados y según lo exija la ley aplicable."
+         data-en="Your personal data is retained only for as long as necessary to fulfill the purposes for which it was collected and as required by applicable law.">
+        Tus datos personales se conservan solo durante el tiempo necesario para cumplir con los fines para los que fueron recopilados y según lo exija la ley aplicable.
       </p>
 
-      <h2>7. Derechos del Usuario</h2>
-      <p>
-        Puedes ejercer tus derechos de acceso, rectificación, cancelación y
-        oposición (ARCO) enviando una solicitud a nuestro correo de contacto.
+      <h2 data-es="7. Derechos del Usuario" data-en="7. User Rights">7. Derechos del Usuario</h2>
+      <p data-es="Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) enviando una solicitud a nuestro correo de contacto."
+         data-en="You may exercise your rights of access, rectification, cancellation, and opposition (ARCO) by sending a request to our contact email.">
+        Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) enviando una solicitud a nuestro correo de contacto.
       </p>
 
-      <h2>8. Cambios en la Política</h2>
-      <p>
-        Nos reservamos el derecho de modificar esta Política de Privacidad en
-        cualquier momento. Notificaremos cualquier cambio relevante a través de
-        la Aplicación o la ficha de Play Store.
+      <h2 data-es="8. Cambios en la Política" data-en="8. Changes to the Policy">8. Cambios en la Política</h2>
+      <p data-es="Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Notificaremos cualquier cambio relevante a través de la Aplicación o la ficha de Play Store."
+         data-en="We reserve the right to modify this Privacy Policy at any time. We will notify any relevant changes through the Application or the Play Store listing.">
+        Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Notificaremos cualquier cambio relevante a través de la Aplicación o la ficha de Play Store.
       </p>
 
-      <h2>9. Contacto</h2>
-      <p class="contact">
-        Si tienes preguntas o inquietudes sobre esta Política de Privacidad,
-        puedes contactarnos en:<br />
+      <h2 data-es="9. Contacto" data-en="9. Contact">9. Contacto</h2>
+      <p class="contact"
+         data-es="Si tienes preguntas o inquietudes sobre esta Política de Privacidad, puedes contactarnos en:<br /><strong>Correo electrónico:</strong> <a href=\"mailto:adrian.dy89@gmail.com\">adrian.dy89@gmail.com</a>"
+         data-en="If you have questions or concerns about this Privacy Policy, you can contact us at:<br /><strong>Email:</strong> <a href=\"mailto:adrian.dy89@gmail.com\">adrian.dy89@gmail.com</a>">
+        Si tienes preguntas o inquietudes sobre esta Política de Privacidad, puedes contactarnos en:<br />
         <strong>Correo electrónico:</strong>
         <a href="mailto:adrian.dy89@gmail.com">adrian.dy89@gmail.com</a>
       </p>
     </div>
+    <script>
+      const langSelect = document.getElementById('lang');
+      function setLang(lang) {
+        document.documentElement.lang = lang;
+        const elements = document.querySelectorAll('[data-es]');
+        elements.forEach(el => {
+          // Si es el párrafo de contacto, actualiza solo el texto y deja el enlace funcional
+          if (el.classList.contains('contact')) {
+            if (lang === 'es') {
+              el.innerHTML = 'Si tienes preguntas o inquietudes sobre esta Política de Privacidad, puedes contactarnos en:<br />' +
+                '<strong>Correo electrónico:</strong> <a href="mailto:adrian.dy89@gmail.com">adrian.dy89@gmail.com</a>';
+            } else {
+              el.innerHTML = 'If you have questions or concerns about this Privacy Policy, you can contact us at:<br />' +
+                '<strong>Email:</strong> <a href="mailto:adrian.dy89@gmail.com">adrian.dy89@gmail.com</a>';
+            }
+          } else {
+            el.innerHTML = el.getAttribute('data-' + lang);
+          }
+        });
+      }
+      langSelect.addEventListener('change', e => {
+        setLang(e.target.value);
+      });
+      // Set default language
+      setLang('es');
+    </script>
   </body>
 </html>
